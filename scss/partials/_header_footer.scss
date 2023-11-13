@@ -1,0 +1,33 @@
+/*********** Header ***********/
+
+header {
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+
+    img {
+        height: 36px;
+        width: 197px; }
+}
+
+
+/*********** Footer ***********/
+
+footer {
+    background-color: $color-dark-grey;
+    color: white;
+    padding: 22px 25px;
+
+    span {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 18px; }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            padding-top: 16px;
+                
+            i {
+                padding-right: 15px;
+                width: 11px; } } }  
+}
