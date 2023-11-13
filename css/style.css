@@ -229,7 +229,7 @@ footer ul li i {
 .menu_img_bandeau img {
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 275px;
 }
 
 /* Section entrée/plat/dessert */
