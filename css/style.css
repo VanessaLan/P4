@@ -55,8 +55,8 @@ footer ul li i {
 }
 .formulaire form {
   display: flex;
-  gap: 20px;
-  width: 33%;
+  gap: 15px;
+  width: 140px;
 }
 .formulaire form input {
   background-color: #EAEAEA;
@@ -320,15 +320,15 @@ footer ul li i {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    gap: 70px;
+    gap: 120px;
   }
   footer div {
     display: flex;
-    gap: 10px;
+    gap: 70px;
   }
   footer ul {
     display: flex;
-    gap: 50px;
+    gap: 20px;
   }
   /*Page menu*/
   .menu_main_container {
@@ -356,6 +356,36 @@ footer ul li i {
     padding: 50px 180px;
   }
 }
+/*Animation bouton*/
+button {
+  transition: all 300ms;
+}
+button:hover {
+  filter: opacity(85%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+}
+
+/*Animation chargement page menu*/
+@keyframes chargement_page_menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.entree {
+  animation: chargement_page_menu 300ms;
+}
+
+.plat {
+  animation: chargement_page_menu 300ms 300ms backwards;
+}
+
+.dessert {
+  animation: chargement_page_menu 300ms 600ms backwards;
+}
+
 /*********** Général ***********/
 * {
   margin: 0;
@@ -369,7 +399,7 @@ a {
 }
 
 .fa-heart {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

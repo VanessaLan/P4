@@ -36,15 +36,15 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    gap: 70px;
+    gap: 120px;
 
     div {
         display: flex;
-        gap: 10px; }
-
+        gap: 70px; }
+  
     ul {
         display: flex;
-        gap: 50px; }
+        gap: 20px; }
 }
 
 

@@ -19,21 +19,21 @@
     background-color: #EAEAEA;
     width: 100%;
     height: 50px; 
-    box-shadow: inset 0 6px 4px -4px rgba(0, 0, 0, 0.15);  
+    box-shadow: inset 0 6px 4px -4px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: center;
     align-items: center;
     
     form {
         display: flex;
-        gap: 20px;
-        width: 33%;
-
+        gap: 15px;
+        width: 140px;
+        
         input {
             background-color: #EAEAEA;
             border: none;
             font-size: 16px;
-        
+
             &::placeholder {
                 color: black;
                 opacity: 1; }
@@ -126,7 +126,7 @@
     
             span {
                 background-color: $couleur-tertiaire;
-                color: #008766;
+                color: $color-dark-green;
                 font-size: 14px;
                 padding: 5px;
                 border-radius: 2px;
