@@ -1,6 +1,6 @@
 /*Version tablette*/
 
-@media (min-width:768px) {
+@media (min-width:767.98px) {
 
     /*Page index*/
 
@@ -68,14 +68,29 @@ footer {
 
        section{
         width: 60%;
-        margin: auto; } } 
+        margin: auto; } }       
 }
 
 
 /*Version desktop*/
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1024px) {
 
     .main_container section {
-        padding: 50px 180px; }
+        padding: 50px 180px; } 
+        
+    .menu_card:hover {
+
+        .menu_card_title_content {
+            width: 90%;} }
 }
+
+
+
+
+    
+
+
+
+
+

@@ -80,27 +80,68 @@
     .menu_card {
         width: 100%;
         height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
         box-sizing: border-box;
-        padding: 0px 5px;
+        padding: 0px 0px 0px 5px;
         background-color: white;
         border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         margin-bottom: 10px;
+        overflow: hidden;
 
-        &_content {
-            display: flex;
-            justify-content: space-between;
-        
-            p {
-                font-weight: 300;
-                font-size: 15px; } }
+            &_title_content h3, &_content p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; }
+
+            &_title_content {
+                width: 100%; }
+
+            &_content {
+                display: flex;
+                justify-content: space-between;
+            
+                    p {
+                        font-weight: 300;
+                        font-size: 15px; } }  
+                
+            &_check {
+                width: 60px;
+                height: 70px;
+                text-align: center;
+                line-height: 80px;
+                border-radius: 0px 15px 15px 0px;
+                background-color: $couleur-tertiaire;
+
+                margin-right: -60px; 
+                transition: margin-right 0.3s; }
 }
 
+    input[type='checkbox'] {
+        appearance: none;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        background: white;
+        
+        &:checked {
+            background: white;
+            position: relative;
+                
+                &:before {
+                font-family: FontAwesome;
+                content: '\f00c';
+                color: $couleur-tertiaire;
+                font-size: 15px;
+                position: absolute;
+                top: 2px;
+                left: 3px; } }      
+}
 
+   
 /* Boutton */
 
 .menu_button {
