@@ -44,34 +44,22 @@ button {
     position: absolute;
     top: 25%;
     left: 50%;
-    margin: 0px 0px 0px -35px;;
+    margin: 0px 0px 0px -35px;
     width: 70px;
     height: 70px;
     border: 7px solid $couleur-primaire;
     border-top-color: $couleur-tertiaire;
     border-radius: 50%;
     animation: rotation 1.5s linear reverse 2;
-    } 
+} 
 
 .loader_container {
     animation: opacity reverse 3s forwards;
-    }
+}
 
 .main_container {
     animation: opacity 0.3s 3s backwards;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 /*Animation checkbox*/
@@ -86,9 +74,33 @@ button {
 
     .menu_card_check {
         margin-right: 0px;
+
         transition: margin-right 0.3s; }
-    } 
+} 
     
 
+/*Animation coeur*/
+
+.heart {
+        cursor: pointer;
+        position: relative;
+
+        .empty_heart, .full_heart {
+            position: absolute;
+            bottom: -10px;
+            right: 10px; } 
+    
+    .full_heart {
+        opacity: 0;
+        background: linear-gradient(-185deg, $couleur-primaire, 45%, $couleur-secondaire);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 1; } }
+} 
 
     
