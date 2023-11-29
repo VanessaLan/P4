@@ -74,10 +74,12 @@ button {
 
     .menu_card_check {
         margin-right: 0px;
-
         transition: margin-right 0.3s; }
 } 
-    
+
+.menu_card_check:not(:hover) {
+    transition: margin-right 0.3s;
+}
 
 /*Animation coeur*/
 

@@ -291,7 +291,6 @@ footer ul li i {
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   margin-right: -60px;
-  transition: margin-right 0.3s;
 }
 .menu_card_check .check {
   cursor: pointer;
@@ -386,6 +385,10 @@ button:hover {
 }
 .menu_card:hover .menu_card_check {
   margin-right: 0px;
+  transition: margin-right 0.3s;
+}
+
+.menu_card_check:not(:hover) {
   transition: margin-right 0.3s;
 }
 
